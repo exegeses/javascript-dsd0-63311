@@ -28,3 +28,11 @@ nav{
         background-color: #fff;
         color: #3c3c3c;
     }
+
+#txt{
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    padding: 4px;
+    font-size: 2em;
+    color: #01432b;
+}
