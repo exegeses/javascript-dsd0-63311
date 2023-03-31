@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e6e6e6;
+    font-family: Barlow, sans-serif;
+    font-size: 1.3em;
+    color: #3c3c3c;
+    width: 600px;
+    margin: auto;
+}
+nav{
+    margin: 32px 0px;
+}
+    nav button{
+        background-color: #3c3c3c;
+        color: #fff;
+        padding: 8px 32px;
+        border-radius: 12px;
+        transition: .5s;
+    }
+    nav button:hover{
+        background-color: #fff;
+        color: #3c3c3c;
+    }
+
+#txt{
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    padding: 4px;
+    font-size: 2em;
+    color: #01432b;
+}
+#form{
+    width: 450px;
+    padding: 32px;
+    background-color: #3D4043;
+    margin: 32px auto;
+    border-radius: 12px;
+}
+    #nombre{
+        width: 100%;
+        padding: 8px;
+        font-family: Barlow;
+        font-style: 20px;
+    }
+    #form button{
+        background-color: #DE6C42;
+        color: #fff;
+        margin: 24px 0px;
+        padding: 8px 48px;
+        border: none;
+        border-radius: 8px;
+    }
+    #txt2{
+        color: #DE6C42;
+        font-size: 20px;
+        margin-left: 32px;
+    }
+
+#caja{
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    background-color: #8f8f8f;
+    box-shadow: 0px 0px 8px #fff;
+}
+
+.naranja{
+    background-color: #f60 !important;
+}
