@@ -11,3 +11,13 @@ function mostrarCaja()
 {
     caja.style.display = 'block';
 }
+
+function mostrarOcultar()
+{
+    if( caja.style.display == 'none' ){
+        mostrarCaja();
+    }
+    else{
+        ocultarCaja();
+    }
+}
