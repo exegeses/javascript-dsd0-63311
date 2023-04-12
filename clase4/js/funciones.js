@@ -11,3 +11,8 @@ function pintarVerde()
 {
     caja.style.backgroundColor = '#3a3';
 }
+
+function pintar( codigoColor )
+{
+    caja.style.backgroundColor = codigoColor;
+}
