@@ -6,12 +6,15 @@ const txtHoras = document.querySelector('#txtHoras');
 const txtMinutos = document.querySelector('#txtMinutos');
 const txtSegundos = document.querySelector('#txtSegundos');
 
+/* variabla auxiliar */
+let intervalo = '';
+
 //declaramos función de control
 function control()
 {
     //creamos objetos de fecha
     const ahora = new Date();
-    const final = new Date(2023, 4, 1);
+    const final = new Date(2023, 3, 14, 15, 37);
 
     //diferencia entre momentos 
     let diferencia = final - ahora;
@@ -48,6 +51,16 @@ function control()
     segundos = segundos%60;
     console.log(segundos);
 
+    /* finalizar la cuenta regresiva */
+    if( dias <= 0 && horas <= 0 && minutos <= 0 && segundos < 0 ){
+        clearInterval( intervalo );
+        txtSegundos.innerText = '00';
+        txtMinutos.innerText = '00';
+        txtHoras.innerText = '00';
+        txtDias.innerText = '00';
+    }
+
+
     /*## agregamos 0 (ceros) iniciales ##*/
     if( segundos < 10 ){
         segundos = '0'+ segundos;
@@ -67,7 +80,8 @@ function control()
     txtMinutos.innerText = minutos;
     txtHoras.innerText = horas;
     txtDias.innerText = dias;
+
 }
 
 control();
-setInterval(control);
+intervalo = setInterval(control);
