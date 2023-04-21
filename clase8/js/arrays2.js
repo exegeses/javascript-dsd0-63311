@@ -25,8 +25,10 @@ prev.addEventListener(
         {
             posicion--;
             if( posicion == -1 ){
-                posicion = 6;
+                posicion = 0;//6
+                prev.style.opacity = '0.1';
             }
+            next.style.opacity = '1';
             alumnosTxt.innerText = alumnos[posicion];
         }
 );
@@ -36,8 +38,10 @@ next.addEventListener(
         {
             posicion++;
             if( posicion == 7 ){
-                posicion = 0;
+                posicion = 6;//0
+                next.style.opacity = '0.1';
             }
+            prev.style.opacity = '1';
             alumnosTxt.innerText = alumnos[posicion];
         }
 );

@@ -1,0 +1,15 @@
+.btn-light{
+    background-color: #b979ed;
+    color: #fff;
+}
+.btn-light:hover{
+    background-color: #a060d4;
+    color: #fff;
+}
+.modal-header{
+    background-color: #e6c2f1;
+}
+
+main{
+    margin-bottom: 160px;
+}
